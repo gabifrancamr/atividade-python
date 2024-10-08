@@ -1,0 +1,157 @@
+1) Leitura e Exibição de Imagens
+Bibliotecas Utilizadas:
+OpenCV: Para leitura e exibição de imagens.
+Técnicas Aplicadas:
+Leitura de Imagens: Utilizou-se cv2.imread() para ler imagens em formatos como JPEG, PNG e WEBP.
+Exibição: As imagens foram exibidas utilizando cv2.imshow().
+Resultados Obtidos:
+As imagens foram carregadas com sucesso a partir de diferentes formatos e exibidas corretamente na tela. Todas as variações de formato de imagem foram compatíveis com o OpenCV.
+
+2) Pré-processamento de Imagens
+Bibliotecas Utilizadas:
+OpenCV: Para conversão, redimensionamento e equalização de histograma.
+Matplotlib: Para exibição das imagens.
+Técnicas Aplicadas:
+Conversão de Cores: Usou-se cv2.cvtColor() para converter imagens coloridas para tons de cinza.
+Redimensionamento: A função cv2.resize() foi usada para alterar o tamanho da imagem.
+Equalização de Histograma: A função cv2.equalizeHist() foi aplicada para melhorar o contraste da imagem.
+Resultados Obtidos:
+Conversão de Cores: A imagem foi convertida com sucesso para tons de cinza, facilitando análises subsequentes.
+Redimensionamento: O redimensionamento alterou as dimensões da imagem sem perda significativa de qualidade.
+Equalização de Histograma: A equalização aprimorou a visibilidade de áreas escuras e claras, resultando em uma imagem com contraste mais uniforme.
+
+3) Aplicação de Filtros
+Bibliotecas Utilizadas:
+OpenCV: Para aplicar desfoque e detecção de bordas.
+Matplotlib: Para exibição das imagens.
+Técnicas Aplicadas:
+Desfoque (Gaussian Blur): Aplicou-se cv2.GaussianBlur() para suavizar a imagem.
+Detecção de Bordas (Canny): Usou-se cv2.Canny() para detectar bordas na imagem.
+Filtro Laplaciano: Aplicado com cv2.Laplacian() para detecção adicional de bordas.
+Resultados Obtidos:
+Desfoque: O desfoque reduziu ruídos, resultando em uma imagem suavizada.
+Detecção de Bordas (Canny): As bordas foram destacadas de forma eficaz, mostrando contornos bem definidos.
+Filtro Laplaciano: Adicionou mais detalhes na detecção de bordas, permitindo identificar mudanças abruptas de intensidade.
+
+4) Detecção de Características
+Bibliotecas Utilizadas:
+OpenCV: Para detecção de cantos, contornos e pontos de interesse.
+Numpy
+Técnicas Aplicadas:
+Detecção de Cantos: cornerHarris() e goodFeaturesToTrack() foram usados para identificar cantos relevantes na imagem.
+Detecção de Contornos: Combinou-se a detecção de bordas com cv2.Canny() e cv2.findContours() para identificar contornos.
+Pontos de Interesse (SIFT): Extração de pontos de interesse usando cv2.SIFT_create().
+Resultados Obtidos:
+Detecção de Cantos: Os algoritmos detectaram com precisão cantos e pontos de interesse na imagem.
+Detecção de Contornos: Os contornos dos objetos foram identificados e exibidos de maneira clara.
+Pontos de Interesse (SIFT): Pontos de interesse exclusivos foram extraídos com sucesso, fornecendo uma base sólida para aplicações de reconhecimento.
+
+5) Transformações Geométricas
+Bibliotecas Utilizadas:
+OpenCV: Para realizar transformações geométricas como rotação, translação e perspectiva.
+NumPy
+Técnicas Aplicadas:
+Rotação: Utilizou-se cv2.getRotationMatrix2D() e cv2.warpAffine() para rotacionar a imagem.
+Translação: A imagem foi deslocada com cv2.warpAffine() usando uma matriz de translação.
+Transformação de Perspectiva (Homografia): Mudança de perspectiva usando cv2.getPerspectiveTransform() e cv2.warpPerspective().
+Correção de Distorção: Correção de distorções com cv2.undistort() e uma matriz de câmera simulada.
+Resultados Obtidos:
+Rotação: A imagem foi rotacionada com sucesso em torno do ponto especificado.
+Translação: A imagem foi movida no espaço sem distorção.
+Transformação de Perspectiva: A transformação de perspectiva foi aplicada corretamente, resultando em uma nova visualização da imagem.
+Correção de Distorção: A distorção foi corrigida, resultando em uma imagem mais precisa.
+
+6) Operações Morfológicas
+Bibliotecas Utilizadas:
+OpenCV: Para aplicar operações morfológicas como erosão, dilatação e abertura.
+NumPy
+Técnicas Aplicadas:
+Erosão e Dilatação: Erosão com cv2.erode() e dilatação com cv2.dilate() para ajustar a forma de objetos em imagens binárias.
+Segmentação por Abertura: Aplicou-se cv2.morphologyEx() para realizar abertura morfológica.
+Resultados Obtidos:
+Erosão e Dilatação: A forma dos objetos foi modificada conforme esperado, sendo útil para segmentação e remoção de ruídos.
+Segmentação por Abertura: A técnica separou eficazmente objetos em uma imagem binária, segmentando objetos individuais com precisão.
+
+7) Segmentação de Imagens
+Bibliotecas Utilizadas:
+OpenCV: Para realizar limiarização e segmentação por regiões.
+NumPy
+Técnicas Aplicadas:
+Limiarização: Utilizou-se cv2.threshold() para binarizar a imagem.
+Algoritmo Watershed: Segmentação baseada em regiões com cv2.watershed().
+Resultados Obtidos:
+Limiarização: A imagem foi convertida em uma binária, destacando claramente os objetos.
+Algoritmo Watershed: Segmentou as regiões da imagem, permitindo uma separação precisa de objetos adjacentes.
+
+8) Combinação e Operações Aritméticas em Imagens
+Bibliotecas Utilizadas:
+OpenCV: Para realizar soma, subtração e mistura de imagens.
+Técnicas Aplicadas:
+NumPy
+Soma e Subtração: Executou-se a soma com cv2.add() e subtração com cv2.subtract() de duas imagens.
+Blending (Mistura): Mistura de duas imagens usando cv2.addWeighted().
+Image Stitching: Combinação de múltiplas imagens para criar panoramas com cv2.Stitcher_create().
+Resultados Obtidos:
+Soma e Subtração: As operações aritméticas funcionaram conforme esperado, combinando ou destacando as diferenças entre as imagens.
+Blending: A mistura das imagens resultou em uma composição visual equilibrada.
+Image Stitching: As imagens foram combinadas corretamente em um panorama contínuo.
+
+9) Análise de Imagens - Análise de Forma e Textura
+Bibliotecas Utilizadas:
+OpenCV: Para processamento de imagens.
+NumPy: Para manipulação de arrays.
+Técnicas Aplicadas:
+
+Análise de Forma: Conversão da imagem para escala de cinza usando cv2.cvtColor().
+Limiarização com cv2.threshold() para binarizar a imagem.
+Detecção de contornos com cv2.findContours().
+Desenho dos contornos detectados na imagem original usando cv2.drawContours().
+
+Análise de Textura (Local Binary Patterns - LBP): Implementação manual do algoritmo LBP (Padrão Binário Local) para capturar a textura em torno de cada pixel. O LBP analisa os valores de pixel vizinhos e gera um padrão binário que descreve a textura local.
+Resultados Obtidos:
+Análise de Forma: Os contornos dos objetos na imagem foram detectados e desenhados com sucesso, permitindo a visualização de suas formas.
+Análise de Textura (LBP): O algoritmo LBP gerou um mapa de textura que destaca variações de textura dentro da imagem, útil para análise mais detalhada de padrões.
+
+10) Manipulação de Arquivos
+Bibliotecas Utilizadas:
+OpenCV: Para leitura e gravação de arquivos de imagem.
+Técnicas Aplicadas:
+Leitura e Processamento de Imagens: Leitura de uma imagem com cv2.imread() e conversão para escala de cinza usando cv2.cvtColor().
+Gravação de Imagem: Salvamento da imagem processada no formato PNG usando cv2.imwrite().
+Resultados Obtidos:
+A imagem em escala de cinza foi salva corretamente no disco, demonstrando a capacidade de manipular e salvar diferentes formatos de imagem.
+
+Desafio 1) Detecção Facial com OpenCV e Caffe Model
+Bibliotecas Utilizadas:
+OpenCV (cv2.dnn): Para carregar o modelo de rede neural profunda (DNN) e realizar a detecção facial.
+NumPy: Para manipulação de arrays de coordenadas.
+Matplotlib: Para exibição das imagens.
+Técnicas Aplicadas:
+Deep Learning para Detecção Facial:
+O modelo Caffe foi carregado com cv2.dnn.readNetFromCaffe().
+Um blob da imagem foi criado com cv2.dnn.blobFromImage() para preparação do input.
+O modelo foi utilizado para detectar faces e desenhar retângulos ao redor das faces detectadas com cv2.rectangle().
+Resultados Obtidos:
+A detecção facial foi realizada com sucesso, marcando as faces na imagem com retângulos verdes, e as imagens foram exibidas corretamente.
+
+Desafio 2) Detecção de Anomalias
+Bibliotecas Utilizadas:
+OpenCV: Para manipulação de imagens.
+Técnicas Aplicadas:
+Detecção de Diferenças entre Imagens:
+As imagens foram convertidas para escala de cinza.
+A diferença entre as duas imagens foi calculada com cv2.absdiff(), destacando as diferenças entre elas.
+Limiarização aplicada com cv2.threshold() para enfatizar as anomalias visíveis.
+Resultados Obtidos:
+As diferenças entre as duas imagens foram realçadas com sucesso, e as anomalias foram claramente identificadas.
+
+Desafio 3) Colorização Simples
+Bibliotecas Utilizadas:
+OpenCV: Para processamento de imagens e aplicação de coloração.
+Técnicas Aplicadas:
+Colorização de Imagem:
+Uma imagem em escala de cinza foi carregada.
+Um mapa de cores (COLORMAP_JET) foi aplicado com cv2.applyColorMap() para gerar uma versão colorida da imagem em tons de azul e vermelho.
+A imagem colorida foi exibida com cv2.imshow().
+Resultados Obtidos:
+A imagem em preto e branco foi colorida com sucesso utilizando um mapa de cores, resultando em uma visualização mais informativa das diferentes intensidades de pixel.
