@@ -49,11 +49,12 @@ cv2.destroyAllWindows()
 # 4. Correção de Distorção (simulação simples)
 def corrigir_distorcao(imagem):
     # Simulação de matriz de calibração da câmera (fx, fy, cx, cy) e coeficientes de distorção
-    matriz_camera = np.array([[500, 0, largura // 2], [0, 500, altura // 2], [0, 0, 1]])
+    matriz_camera = np.array([[1000, 0, largura // 2], [0, 1000, altura // 2], [0, 0, 1]])
     coef_distorcao = np.array([[-0.2, 0.1, 0, 0]])  # Exemplo simplificado de coeficiente
 
     imagem_corrigida = cv2.undistort(imagem, matriz_camera, coef_distorcao)
     return imagem_corrigida
+    
 
 imagem_corrigida = corrigir_distorcao(imagem_redimensionada)
 cv2.imshow('Correção de Distorção', imagem_corrigida)
