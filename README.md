@@ -22,8 +22,8 @@ Este projeto aborda diversas técnicas de processamento de imagens utilizando a 
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu_usuario/projeto-analise-imagens.git
-   cd projeto-analise-imagens
+    git clone https://github.com/gabifrancamr/atividade-python.git
+   cd atividade-python
 2. Instale as dependências:
     ```bash
     pip install opencv-python numpy matplotlib
