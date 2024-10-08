@@ -1,5 +1,7 @@
 ## Sistema de Manipulação e Processamento Avançado de Imagens com OpenCV
 
+https://docs.google.com/document/d/14XmTBIapELuD_Hj-x3rsOALJg_Si9DKNUZT3t-od7-U/edit?usp=sharing
+
 # Projeto de Análise de Imagens
 
 Este projeto aborda diversas técnicas de processamento de imagens utilizando a biblioteca OpenCV em Python. O objetivo é realizar operações como leitura, pré-processamento, aplicação de filtros, detecção de características, transformações geométricas, operações morfológicas, segmentação e combinações de imagens.
