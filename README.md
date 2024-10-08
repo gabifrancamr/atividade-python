@@ -61,3 +61,22 @@ Para executar os scripts, basta utilizar o Python a partir do terminal ou um amb
 8) Combinação e Operações Aritméticas em Imagens
 - Bibliotecas Utilizadas: OpenCV
 - Resultados Obtidos: Soma, subtração e mistura de imagens
+9) Análise de Imagens: Análise de Forma e Análise de Textura
+- Bibliotecas Utilizadas: OpenCV, NumPy
+- Resultados Obtidos: Análise de contornos em uma imagem e aplicação de Local Binary Patterns (LBP) para análise de textura.
+10) Manipulação de Arquivos
+- Bibliotecas Utilizadas: OpenCV
+- Resultados Obtidos: Salvamento de imagens processadas em diferentes formatos (por exemplo, PNG).
+  
+Desafio 1: Detecção de Faces
+- Bibliotecas Utilizadas: OpenCV
+- Resultados Obtidos: Detecção de faces em uma imagem usando um modelo pré-treinado.
+  
+Desafio 2: Detecção de Anomalias
+- Bibliotecas Utilizadas: OpenCV
+- Resultados Obtidos: Comparação de duas imagens e identificação de anomalias por meio de diferença de pixels.
+  
+Desafio 3: Colorização de Imagens em Preto e Branco
+- Bibliotecas Utilizadas: OpenCV
+- Resultados Obtidos: Aplicação de um mapa de cores para colorizar uma imagem em preto e branco.
+
