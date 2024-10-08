@@ -10,9 +10,6 @@ Este projeto aborda diversas técnicas de processamento de imagens utilizando a 
 2. [Instalação](#instalação)
 3. [Uso](#uso)
 4. [Questões e Resultados](#questões-e-resultados)
-5. [Exemplos de Código](#exemplos-de-código)
-6. [Contribuições](#contribuições)
-7. [Licença](#licença)
 
 ## Pré-requisitos
 
