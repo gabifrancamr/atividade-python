@@ -12,6 +12,7 @@ Este projeto aborda diversas técnicas de processamento de imagens utilizando a 
 2. [Instalação](#instalação)
 3. [Uso](#uso)
 4. [Questões e Resultados](#questões-e-resultados)
+5. [Exemplo](#exemplo)
 
 ## Pré-requisitos
 
@@ -78,4 +79,18 @@ Desafio 2: Detecção de Anomalias
 Desafio 3: Colorização de Imagens em Preto e Branco
 - Bibliotecas Utilizadas: OpenCV
 - Resultados Obtidos: Aplicação de um mapa de cores para colorizar uma imagem em preto e branco.
+
+## Exemplo
+- Detecção de anomalias
+  
+![cachorro](https://github.com/user-attachments/assets/421dda00-b44c-44d9-8bae-085dfd36abc8)
+
+![cachorro2](https://github.com/user-attachments/assets/67ca279a-84bf-43e8-8745-4ccec5d76c67)
+
+![Captura de tela 2024-10-08 162057](https://github.com/user-attachments/assets/3a4b673b-72e6-443e-8767-a7efd9196cee)
+
+
+
+
+
 
