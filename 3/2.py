@@ -11,7 +11,7 @@ imagem = cv2.imread('./img/1.jpg')
 imagem2 = cv2.imread('./img/3.webp')
 imagem_cinza = cv2.cvtColor(imagem2, cv2.COLOR_BGR2GRAY)
 
-bordas = cv2.Canny(imagem_cinza, 100, 200)
+bordas = cv2.Canny(imagem_cinza, 100, 200) # Detecta as bordas da imagem em escala de cinza usando o algoritmo de Canny, com limiares de 100 e 200
 
 cv2.imshow('Bordas', bordas)
 cv2.waitKey(0)

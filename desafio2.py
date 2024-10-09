@@ -1,3 +1,5 @@
+# Detecção de Anomalias: Detectar anomalias em imagens (objetos fora do padrão).
+
 import cv2
 import numpy as np
 

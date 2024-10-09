@@ -9,8 +9,11 @@ import matplotlib.pyplot as plt
 imagem = cv2.imread('./img/3.webp')
 imagem_cinza = cv2.cvtColor(imagem, cv2.COLOR_BGR2GRAY)
 
-laplaciano = cv2.Laplacian(imagem_cinza, cv2.CV_64F)
-laplaciano = cv2.convertScaleAbs(laplaciano)  # Converte a imagem para 8-bits para exibição
+# Aplica o operador Laplaciano para detectar mudanças abruptas de intensidade (bordas) na imagem em escala de cinza
+laplaciano = cv2.Laplacian(imagem_cinza, cv2.CV_64F) # Define o formato da imagem como ponto flutuante de 64 bits para permitir valores negativos e grandes
+
+# Converte a imagem Laplaciana para uma escala de 8 bits (valores absolutos) para exibição
+laplaciano = cv2.convertScaleAbs(laplaciano)  
 
 cv2.imshow('Filtro Laplaciano', laplaciano)
 cv2.waitKey(0)

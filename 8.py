@@ -23,18 +23,27 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # Blending (Mistura de Imagens)
+# cv2.addWeighted mistura as duas imagens com pesos especificados.
+# O primeiro argumento é a imagem1, o segundo é seu peso (0.7),
+# o terceiro é a imagem2, o quarto é seu peso (0.3),
+# e o quinto argumento (0) é um valor adicionado ao resultado (não utilizado aqui).
 blended = cv2.addWeighted(imagem1_redimensionada, 0.7, imagem2_redimensionada, 0.3, 0)
 cv2.imshow('Blending de Imagens', blended)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # Image Stitching (Costura de Imagens)
+# Carregar várias imagens que serão costuradas para criar uma panorâmica.
 img1 = cv2.imread('./img/st/1.jpg')
 img2 = cv2.imread('./img/st/2.jpg')
 img3 = cv2.imread('./img/st/3.jpg')
 img4 = cv2.imread('./img/st/4.jpg')
 
+# Criar um objeto Stitcher que irá processar as imagens.
 stitcher = cv2.Stitcher_create()
+
+# Stitcher.stitch combina as imagens fornecidas em uma única imagem panorâmica.
+# O primeiro argumento é uma lista das imagens a serem costuradas.
 status, panorama = stitcher.stitch([img1, img2, img3, img4])
 
 if status == cv2.STITCHER_OK:
